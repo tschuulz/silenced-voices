@@ -9,15 +9,30 @@ Caravan Attack Site is a room. "Strewn over the ground sits the remains of the c
 
 [room 2]
 
+[room 2 connects to room 3: east/west]
 
 [room 3]
 
-
+[room 3 connects to room 7: south-east/north-west]
 
 [room 4]
+Scrub Land is a room. "You are standing on some hilly terrain covered with tumble weed clumps"
+
+	[make tumble weed object]
+	[make buried sign object]
+	
+	[room 4 connects to room 7: south/north]
+	[room 4 connects to room 4i: up/down]
 
 
 [room 4i]
+In the buried gas station. "Sun light filtering through the hole in the roof illuminates the murk of this buried tomb."
+
+	[make pre-cataclysm map ]
+	[make ladder]
+	[make shovel]
+	
+	[room 4i connects to room 4: up/down]
 
 
 [room 5]
