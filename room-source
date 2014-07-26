@@ -5,7 +5,7 @@
 
 
 [room 1]
-Caravan Attack Site is a room. Description "Strewn over the ground sits the remains of the caravan."
+The Caravan Attack Site is a room.  "Strewn over the ground sits the remains of the caravan."
 
 [room 2]
 
@@ -17,34 +17,40 @@ Caravan Attack Site is a room. Description "Strewn over the ground sits the rema
 [room 4]
 
 
+[room 4i]
+
+
 [room 5]
-
-
+Radio Tower is a room. "Rising above one of the higher dunes you see the tower of an abandoned radio station. At the bottom there is a few loose stantions, it looks like the tower might collapse any second."
+	[make Stantion to pull away from tower]
+	[add path to 5i_u, 6_e]
+[room 5i]
+Top of the Radio Tower is a room. "After climbing the tower you discover a radio transmitter and a small cabinet behind the dish."
+	[make condition to see buried statue: have  map]
+	[make Clipboard / Timelog inside cabinet]
+	[add path to 5_d]
 [room 6]
 
-
+	[add path to 5_w, 7_e, 8_sw, 9_s]
 [room 7]
 
-
-
-
+	[add path to 3_nw, 4_n, 6_w, 10_s]
 [room 8]
-
-
+Buried Roadside Attraction is a room. "The Object you spotted from the radio tower appears to be a hand, belonging to a statue buried underneath sand."
+	[condition to uncover statue: shovel completed && looked south from radio tower]
+	[make body inside statue]
+	[make IDcard hidden on body]
+	[add path to 6_ne, 9_e]
 [room 9]
-
-
-
+Raider Camp is a room. "In the centre of the Camp is a firepit. To the right you notice large pile of human bones."
+	[make shoulder plate bone shovel]
+	
+	[add path to 6_n, 8_w, 10_e]
 [room 10]
 
-
+	[add path to 7_n, 9_w, 11_e]
 [room 11]
-
-
-[room 12]
-
-
-[room 13]
-
-
-[room 14]
+Vault Entrance is room. ""
+	[add path to 10_w, 11i_d]
+[room 11i]
+Vault Inside is a room. ""
